@@ -12,28 +12,6 @@
 
 version="1.2.1"
 clear
-## TODOs
-## Check version and/or TM app apth - Not needed
-## Unload launchAgents and daemons + set to Disabled TRUE. just in case. DONE
-## Delete launchAgents and daemons DONE
-## delete the APP ! DONE
-## Delete Host Preferences
-## Delete loggedin User Preferences - Any User ??? maybe.
-## Delete [...] see below (logs, Saved Application State)
-
-## HOSTS files - DO a list of TeamViewer Versions, and a  loop with an array.
-#TeamViewer_launchagent="/Library/LaunchAgents/com.teamviewer.teamviewer.plist"
-#TeamViewer_launchagent_desktop="/Library/LaunchAgents/com.teamviewer.teamviewer_desktop.plist"
-#TeamViewer_launchdaemon_helper="/Library/LaunchDaemons/com.teamviewer.Helper.plist"
-#TeamViewer_launchdaemon_service="/Library/LaunchDaemons/com.teamviewer.teamviewer_service.plist"
-
-#TeamViewer9_Preferencesfile="/Library/Preferences/com.teamviewer.teamviewer9.plist"
-#TeamViewer10_Preferencesfile="/Library/Preferences/com.teamviewer.teamviewer10.plist"
-
-# Users files - Try to remove it from Any user.
-TeamViewer_UserPreferencesfile="~/Library/Preferences/com.teamviewer.Teamviewer.plist"
-TeamViewer9_UserPreferencesfile="~/Library/Preferences/com.teamviewer.teamviewer9.plist"
-TeamViewer10_UserPreferencesfile="~/Library/Preferences/com.teamviewer.teamviewer10.plist"
 
 ##########
 
@@ -116,9 +94,24 @@ do_it
 
 exit 0
 
+## TODOs
+## Check version and/or TM app apth - Not needed
+## Unload launchAgents and daemons + set to Disabled TRUE. just in case. DONE
+## Delete launchAgents and daemons DONE
+## delete the APP ! DONE
+## Delete Host Preferences
+
+## Delete loggedin User Preferences and Saved Application State- Any User ??? maybe.
+# Users files - Try to remove it from Any user.
+#TeamViewer_UserPreferencesfile="~/Library/Preferences/com.teamviewer.Teamviewer.plist"
+#TeamViewer9_UserPreferencesfile="~/Library/Preferences/com.teamviewer.teamviewer9.plist"
+#TeamViewer10_UserPreferencesfile="~/Library/Preferences/com.teamviewer.teamviewer10.plist"
+
+## Delete [...] see below (logs, Saved Application State)
+
 ## to check in User(s) scope.
-## /private/var/ladmin/Library/Logs/TeamViewer/TeamViewer10_Logfile.log
-## /private/var/ladmin/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/data.data
-## /private/var/ladmin/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/windows.plist
-## /private/var/ladmin/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/window_2.data
+## //users/someuser/Library/Logs/TeamViewer/TeamViewer10_Logfile.log
+## //users/someuser/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/data.data
+## //users/someuser/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/windows.plist
+## //users/someuser/Library/Saved Application State/com.teamviewer.TeamViewer.savedState/window_2.data
 
